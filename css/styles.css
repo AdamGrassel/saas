@@ -1,0 +1,87 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    z-index: 500;
+    transition: ease-in-out .3s;
+    padding: 16px;
+} 
+
+.navbar.sticky {
+    background: white;
+    box-shadow: 0 0 20px rgba(48,63,100,.2);
+}
+
+.navbar.sticky .navbar-toggler span,
+.navbar.sticky .navbar-brand {
+    color: #666;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+    color: #666;
+    font-size: 20px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+[aria-controls="navbar-dropdown"] {
+    display: none;
+}
+
+.navbar .container {
+    display: flex;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar .container,
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 430px;
+    width: 100%;
+    transition: ease-in-out .3s;
+}
+
+.nav-link a {
+    color: var(--font-light);
+    font-size: var(--size-14);
+    font-weight: 500;
+    font-family: 'inter';
+    margin-right: 40px;
+    line-height: 17px;
+    white-space: nowrap;
+}
+
+header {
+    margin-top: var(--size-150);
+}
+
+header h1 {
+    width: 250px;
+    font-size: var(--size-40);
+}
+
+.title p {
+    color: var(--font-light);
+}
+
+.head-link a {
+    margin-left: var(--size-18);
+    color: #2476FF;
+    font-weight: 700;
+}
