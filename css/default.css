@@ -21,6 +21,10 @@
     font-family: 'inter';
 }
 
+p {
+    color: var(--font-light);
+}
+
 ul {
     padding: 0;
     margin: 0;
