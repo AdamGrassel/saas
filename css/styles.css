@@ -21,7 +21,7 @@
     position: absolute;
     width: 430px;
     height: 471px;
-    right: -113px;
+    right: -130px;
     top: -54px;
     background: #E1E7EF;
     transform: skew(-25deg, -5deg);
@@ -113,4 +113,69 @@ header h1 {
     margin-left: var(--size-18);
     color: #2476FF;
     font-weight: 700;
+}
+
+.intro {
+    display: flex;
+}
+
+.logos,
+.intro-left {
+    width: 50%;
+}
+
+.logo-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 74%;
+    padding: 10px;
+    position: relative;
+}
+
+.google-logo {
+    width: 60px;
+    left: 116px;
+    top: -15px;
+}
+
+.atla-logo {
+    width: 80px;
+    padding: 16px;
+    top: -74px;
+    left: 256px;
+}
+
+.asana-logo {
+    width: 80px;
+    padding: 16px;
+    top: -154px;
+    left: 471px;
+}
+
+.calendar-logo {
+    width: 80px;
+    padding: 16px;
+    top: 66px;
+    left: 452px;
+}
+
+.google-a-logo {
+    width: 60px;
+    padding: 10px;
+    top: -36px;
+    left: 224px;
+}
+
+.weave-logo {
+    width: 80px;
+    padding: 16px;
+    top: -270px;
+    left: 363px;
+}
+
+.paypal-logo {
+    width: 80px;
+    padding: 16px;
+    top: -190px;
+    left: 94px;
 }
