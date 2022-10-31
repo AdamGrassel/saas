@@ -34,12 +34,12 @@
     left:0;
     z-index: 500;
     transition: ease-in-out .3s;
-    padding: 16px;
+    padding: var(--size-16);
 } 
 
 .navbar.sticky {
     background-color: white;
-    box-shadow: 0 0 20px rgba(48,63,100,.2);
+    box-shadow: 0 0 var(--size-20) rgba(48,63,100,.2);
 }
 
 .navbar.sticky .navbar-toggler span,
@@ -49,8 +49,8 @@
 
 .navbar-toggler {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: var(--size-20);
+    top: var(--size-10);
     outline: none;
     background-color: transparent;
     border: 1px solid transparent;
@@ -58,7 +58,7 @@
 
 .navbar-toggler span {
     color: #666;
-    font-size: 20px;
+    font-size: var(--size-20);
     cursor: pointer;
     pointer-events: none;
 }
@@ -128,7 +128,7 @@ header h1 {
     background: #FFFFFF;
     box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
     border-radius: 74%;
-    padding: 10px;
+    padding: var(--size-10);
     position: relative;
 }
 
@@ -140,35 +140,34 @@ header h1 {
 
 .atla-logo {
     width: 80px;
-    padding: 16px;
+    padding: var(--size-16);
     top: -74px;
     left: 256px;
 }
 
 .asana-logo {
     width: 80px;
-    padding: 16px;
+    padding: var(--size-16);
     top: -154px;
     left: 471px;
 }
 
 .calendar-logo {
     width: 80px;
-    padding: 16px;
+    padding: var(--size-16);
     top: 66px;
     left: 452px;
 }
 
 .google-a-logo {
     width: 60px;
-    padding: 10px;
     top: -36px;
     left: 224px;
 }
 
 .weave-logo {
     width: 80px;
-    padding: 16px;
+    padding: var(--size-16);
     top: -270px;
     left: 363px;
 }
@@ -194,7 +193,7 @@ header h1 {
 }
 
 .key-cards img {
-    width: 40px;
+    width: var(--size-40);
 }
 
 .premium,
@@ -202,7 +201,15 @@ header h1 {
 .documentation,
 .customizable {
     border: 1px solid #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px var(--size-10) var(--size-20) rgba(0, 0, 0, 0.15);
     padding: var(--size-20);
     margin-top: 70px;
+}
+
+.premium span {
+    font-size: 12px;
+    color: white;
+    background: #01C9A7;
+    padding: 4px var(--size-10);
+    border-radius: var(--size-16);
 }
