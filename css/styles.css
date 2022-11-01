@@ -215,3 +215,21 @@ header h1 {
     padding: 4px var(--size-10);
     border-radius: var(--size-16);
 }
+
+.prospective {
+    background-color: #f8fafe;
+    display: flex;
+    margin-top: var(--size-150);
+    padding-top: var(--size-150);
+    padding-right: 0;
+}
+
+.front-video {
+    padding: var(--size-20);
+    width: 48%;
+}
+
+.front-video h2 {
+    font-size: var(--size-30);
+    font-weight: 500;
+}
