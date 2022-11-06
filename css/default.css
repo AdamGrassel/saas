@@ -18,11 +18,15 @@
 ::after,
 ::before {
     box-sizing: border-box;
+}
+
+body {
     font-family: 'inter';
 }
 
 p {
     color: var(--font-light);
+    font-size: var(--size-16);
 }
 
 ul {
