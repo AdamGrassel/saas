@@ -487,9 +487,62 @@ header h1 {
     margin-top: 5px;
 }
 
+.quote-body {
+    
+    overflow: hidden;
+    max-width: 290px;
+}
+
+.body-wrapper {
+    display: flex;
+    position: relative;
+    animation: ani-one steps(1) 15s infinite;
+}
+
+@keyframes ani-one {
+    0% {right: 0px;}
+    33% {right: 300px;}
+    66% {right: 600px;}
+    100% {right: 0px;}
+}
+
 .woman-one,
-.woman-two {
-    display: none;
+.woman-two,
+.man-one {
+    min-width: 250px;
+    margin-right: 50px;
+}
+
+.woman-one-img {
+    animation: imgone steps(1) 15s infinite;
+}
+
+.woman-two-img {
+    animation: imgtwo steps(1) 15s infinite;
+}
+
+.man-one-img {
+    animation: imgthree steps(1) 15s infinite;
+}
+
+@keyframes imgone {
+    0% {transform: scale(1.5);}
+    33% {transform: scale(1.0);}
+    100% {transform: scale(1.5);}
+}
+
+@keyframes imgthree {
+    0% {transform: scale(1.0);}
+    33% {transform: scale(1.5);}
+    66% {transform: scale(1.0);}
+    100% {transform: scale(1.0);}
+}
+
+@keyframes imgtwo {
+    0% {transform: scale(1.0);}
+    33% {transform: scale(1.0);}
+    66% {transform: scale(1.5);}
+    100% {transform: scale(1.0);}
 }
 
 .quote-img img {
@@ -532,6 +585,7 @@ textarea {
 .checkbox label {
     display: inline-block;
     width: 80%;
+    color: var(--font-light);
 }
 
 .form-btn {
