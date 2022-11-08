@@ -434,3 +434,15 @@ header h1 {
 .money-card {
     padding: 20px 44px;
 }
+
+.hire-us {
+    background: #20335B;
+    display: flex;
+}
+
+form {
+    background: #fff;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 15px;
+}
