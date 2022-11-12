@@ -36,8 +36,13 @@
     left:0;
     z-index: 500;
     transition: ease-in-out .3s;
-    padding: var(--size-16);
+    padding: var(--size-16) 0;
 } 
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 .navbar.sticky {
     background-color: white;
@@ -83,8 +88,7 @@
 }
 
 .navbar-brand {
-    margin-right: 430px;
-    width: 100%;
+    width: 190px;
     transition: ease-in-out .3s;
 }
 
