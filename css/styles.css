@@ -92,7 +92,6 @@
     color: var(--font-light);
     font-size: var(--size-14);
     font-weight: 500;
-    font-family: 'inter';
     margin-right: 40px;
     line-height: 17px;
     white-space: nowrap;
@@ -126,6 +125,10 @@ header h1 {
     width: 50%;
 }
 
+.logos {
+    padding-left: 60px;
+}
+
 .logo-wrapper {
     background: #FFFFFF;
     box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
@@ -134,9 +137,39 @@ header h1 {
     position: relative;
 }
 
+.group-one,
+.group-two,
+.group-three {
+    display: flex;
+}
+
+.group-two,
+.group-one {
+    justify-content: space-between;
+}
+
+.group-two {
+    margin-top: 90px;
+}
+
+.group-three {
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.weave-logo {
+    right: var(--size-150);
+}
+
+.calendar-logo {
+    right: 40px;
+}
+
 .google-logo,
 .google-a-logo {
     width: 60px;
+    height: 60px;
+    animation: fade-in linear .5s;
 }
 
 .atla-logo,
@@ -146,43 +179,57 @@ header h1 {
 .paypal-logo {
     width: 80px;
     padding: var(--size-16);
+    animation: fade-in linear .5s;
 }
 
-.google-logo {
-    left: 116px;
-    top: -15px;
-}
-
-.atla-logo {
-    top: -74px;
-    left: 256px;
-}
-
-.asana-logo {
-    top: -154px;
-    left: 471px;
-}
-
-.calendar-logo {
-    top: 66px;
-    left: 452px;
+@keyframes fade-in {
+    0% {top: 100px;
+        opacity: 0%;}
+    100% {top: 0;
+        opacity: 100%;}
+            
 }
 
 .google-a-logo {
-    top: -36px;
-    left: 224px;
+        right: 200px;
+        bottom: 30px;
+        animation: fade-in-one linear .5s;
 }
 
-.weave-logo {
-    top: -270px;
-    left: 363px;
+@keyframes fade-in-one {
+    0% {top: 70px;
+        opacity: 0%;}
+    100% {top: -30px;
+          opacity: 100%;}
+
 }
 
-.paypal-logo {
-    top: -190px;
-    left: 94px;
+.atla-logo {
+    bottom: -40px;
+    animation: fade-in-two linear .5s;
 }
 
+@keyframes fade-in-two {
+    0% {top: 140px;
+        opacity: 0%;}
+    100% {top: 40px;
+          opacity: 100%;}
+
+}
+
+.asana-logo {
+    bottom: -20px;
+    animation: fade-in-three linear .5s;
+}
+
+@keyframes fade-in-three {
+    0% {top: 120px;
+        opacity: 0%;}
+    100% {top: 20px;
+          opacity: 100%;}
+
+}
+    
 .key-head {
     text-align: center;
 }
@@ -592,4 +639,82 @@ textarea {
     width: 100%;
     border-radius: 10px;
     margin-top: 30px;
+}
+
+.flex-wrap {
+    display: flex;
+    margin-top: 80px;
+    font-size: var(--size-14);
+    line-height: 30px;
+}
+
+.cont-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    width: 700px;
+}
+
+.flex-wrap i {
+    margin-right: 10px;
+}
+
+.comp-info span {
+    color: white;
+    background: #2576FF;
+    font-size: 8px;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.site-map a,
+.flex-wrap a {
+    color: var(--font-light);
+}
+
+.phone img {
+    width: 35%;
+    margin: 15px 0;
+}
+
+.phone li {
+    white-space: nowrap;
+}
+
+footer hr {
+    margin: 40px 0;
+}
+
+.site-map-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-map {
+    display: flex;
+    align-items: center;
+}
+
+.site-map span {
+    margin: 0 16px;
+}
+
+.social button{
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+}
+
+.social select{
+    width: 130px;
+}
+
+a:hover {
+    color: initial;
+}
+
+.copyright,
+.disclaimer {
+    text-align: center;
+    max-width: 800px;
+    margin: auto
 }
