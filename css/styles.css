@@ -1,5 +1,5 @@
 .bg {
-    width: 110%;
+    width: 120%;
     display: flex;
     position: absolute;
     top: 0;
@@ -15,6 +15,7 @@
     width: 100%;
     overflow: hidden;
     height: 500px;
+    z-index: -1;
 }
 
 .header-bg {
@@ -61,6 +62,7 @@
     outline: none;
     background-color: transparent;
     border: 1px solid transparent;
+    z-index: 10;
 }
 
 .navbar-toggler span {
@@ -90,6 +92,7 @@
 .navbar-brand {
     width: 190px;
     transition: ease-in-out .3s;
+    z-index: 10;
 }
 
 .nav-link a {
@@ -333,6 +336,10 @@ header h1 {
     display: flex;
     justify-content: space-between;
     margin: 20px 180px 0 180px;
+}
+
+.bullet-text p {
+    color: initial;
 }
 
 .explain-video {
@@ -695,9 +702,12 @@ footer hr {
 }
 
 .social button{
-    height: 40px;
-    width: 40px;
-    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
 .social select{
@@ -713,4 +723,8 @@ a:hover {
     text-align: center;
     max-width: 800px;
     margin: auto
+}
+
+.disclaimer p {
+    margin: 0 30px;
 }
