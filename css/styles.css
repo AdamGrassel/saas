@@ -121,16 +121,9 @@ header h1 {
 }
 
 .intro {
-    display: flex;
-}
-
-.logos,
-.intro-left {
-    width: 50%;
-}
-
-.logos {
-    padding-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 100px;
 }
 
 .logo-wrapper {
@@ -240,11 +233,11 @@ header h1 {
 
 .key-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: var(--size-30);
     max-width: 972px;
     background: #FFFFFF;
-    
+    margin-top: 70px;
 }
 
 .key-cards img {
@@ -258,7 +251,6 @@ header h1 {
     border: 1px solid #FFFFFF;
     box-shadow: 0px var(--size-10) var(--size-20) rgba(0, 0, 0, 0.15);
     padding: var(--size-20);
-    margin-top: 70px;
 }
 
 .premium:hover,
@@ -281,7 +273,8 @@ header h1 {
 
 .prospective {
     background-color: #f8fafe;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     margin-top: var(--size-100);
     padding-top: var(--size-150);
     padding-right: 0;
@@ -289,7 +282,6 @@ header h1 {
 
 .front-video {
     padding: var(--size-20);
-    width: 48%;
 }
 
 .front-video h2 {
@@ -377,7 +369,7 @@ header h1 {
 .hub-test {
     display: grid;
     gap: 90px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 
 .image {
@@ -501,6 +493,8 @@ header h1 {
 
 .quote-wrapper {
     margin: 100px 50px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
 
 .top-quote h2 {
@@ -544,6 +538,7 @@ header h1 {
     max-width: 290px;
 }
 
+.name-job,
 .body-wrapper {
     display: flex;
     position: relative;
@@ -608,23 +603,20 @@ form {
     padding: 30px;
     margin: 30px;
     border-radius: 15px;
-    max-width: 500px;
 }
 
 textarea,
 select,
 input {
+    width: 44%;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
 }
 
-select {
-    width: 44%;
-}
-
 textarea {
     resize: none;
+    width: 93%;
 }
 
 .checkbox input {
@@ -654,8 +646,8 @@ textarea {
 
 .cont-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    width: 700px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 600px;
 }
 
 .flex-wrap i {
