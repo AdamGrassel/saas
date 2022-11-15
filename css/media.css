@@ -80,7 +80,7 @@
     }
     
     .image {
-        width: 400px;
+        width: 100%;
         margin: auto;
     }
 
@@ -113,10 +113,163 @@
     }
 
     .part-one {
-        width: 500px;
+        width: 100%;
     }
 
     .part-two {
         margin-left: 80px;
+    }
+
+    .cont-wrapper {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container,
+    .logos {
+        max-width: 375px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bg {
+        width: 130%;
+    }
+
+    .header-bgTwo {
+        width: 40%;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        padding: 80px 160px;
+    }
+
+    .nav-link {
+        margin: 30px 0;
+    }
+
+    [aria-expanded="true"] ~ ul li a {
+        margin-right: 0px;
+    }
+
+    header h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .intro {
+        gap: 60px;
+        margin-top: 150px;
+    }
+
+    .intro-left {
+        padding:0 30px;
+    }
+
+    .logos {
+        padding: 0 18px;
+    }
+
+    .part-two,
+    .bullet-text {
+        margin: 0;
+    }
+
+    .bullet-wrapper {
+        display: flex;
+    }
+
+    .bullet {
+        margin-top: 0;
+    }
+
+    .circle {
+        margin: 15px 30px;
+    }
+
+    .bullet,
+    .bullet-text,
+    .bullet-text p {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    
+    .bullet-text p {
+        text-align: left;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .explain-video {
+        margin-top: 40px;
+    }
+
+    .hub-test {
+        padding: 0 20px;
+    }
+
+    .exec-dir-quote img {
+        width: 40%;
+    }
+
+    .trust-comp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trust-comp img {
+        width: 30%;
+    }
+
+    .pricing {
+        margin-top: var(--size-100);
+    }
+
+    .primary {
+        grid-column: initial;
+    }
+
+    .quote-wrapper {
+        margin: 0px 50px 0 40px;
+        text-align: center;
+    }
+
+    .quote-img {
+    justify-content: center;
+    }
+
+    input {
+        width: 93%;
+    }
+
+    .checkbox-input {
+        top: -60px;
+    }
+
+    .cont-wrapper {
+        width: 100%;
+    }
+
+    .flex-wrap {
+        display: block;
+        text-align: center;
+    }
+
+    .site-map-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    .social select {
+        width: 55%;
+        margin: 20px;
     }
 }
