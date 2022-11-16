@@ -128,9 +128,13 @@
 @media screen and (max-width: 375px) {
     .container,
     .logos {
-        max-width: 375px;
+        max-width: 360px;
         padding: 0;
         margin: 0;
+    }
+
+    .navbar {
+        max-width: 375px;
     }
 
     .bg {
@@ -211,6 +215,10 @@
         padding: 0 var(--size-20);
     }
 
+    .exec-dir-quote {
+        max-width: 300px;
+    }
+
     .exec-dir-quote img {
         width: 40%;
     }
@@ -241,7 +249,8 @@
     justify-content: center;
     }
 
-    input {
+    input,
+    select {
         width: 93%;
     }
 
